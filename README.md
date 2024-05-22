@@ -92,3 +92,29 @@ public class Usuario {
 }
 
 ```
+
+## Inclusáo o driver do MySQL no pom.xml
+
+```sh
+<dependency>
+	<groupId>com.mysql</groupId>
+	<artifactId>mysql-connector-j</artifactId>
+	<scope>runtime</scope>
+</dependency>
+```
+
+## Configuração da conexáo com o MySQL no application.properties
+
+```sh
+#spring.application.name=springjpa
+#spring.h2.console.enabled=true
+
+
+spring.jpa.hibernate.ddl-auto=update
+spring.datasource.url=jdbc:mysql://localhost:3308/springjpa
+spring.datasource.username=root
+spring.datasource.password=root
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+spring.jpa.show-sql: true
+```
+
