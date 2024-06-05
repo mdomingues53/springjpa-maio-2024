@@ -29,7 +29,7 @@ public class DataInitializr implements ApplicationListener<ContextRefreshedEvent
 		 * 7 - Consultar Aproximada Por Nome
 		 * 8 - Consultar Por Email
 		 */
-		int opcao = 5;
+		int opcao = 6;
 		
 		switch(opcao) {			
 			case 1 : 
