@@ -1,0 +1,6 @@
+ambiente:
+  dev:
+    server: localhost:8082
+    app: springjpa
+    descricao: Aplicação de teste do spring boot
+    

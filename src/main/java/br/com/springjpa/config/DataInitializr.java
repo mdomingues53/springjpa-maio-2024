@@ -3,6 +3,7 @@ package br.com.springjpa.config;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.event.ContextRefreshedEvent;
 import org.springframework.stereotype.Component;
@@ -12,7 +13,7 @@ import br.com.springjpa.repository.UsuarioRepository;
 
 @Component
 public class DataInitializr implements ApplicationListener<ContextRefreshedEvent>{
-
+	
 	@Autowired
 	private UsuarioRepository userRepository;
 	
