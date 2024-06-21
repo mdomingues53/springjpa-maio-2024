@@ -17,4 +17,13 @@ public class UsuarioService {
 	public List<Usuario> findAll(){
 		return usuarioRepository.findAll();
 	}
+	
+	public List<Usuario> findListaUsuariosByNome(String nome){		
+		return usuarioRepository.findByLikeNome(nome);
+	}
+	
+	public void gravarUsuario(Usuario usuario){		
+		usuarioRepository.save(usuario);
+	}
+
 }

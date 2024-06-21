@@ -80,10 +80,10 @@ public class DataInitializr implements ApplicationListener<ContextRefreshedEvent
 	}
 
 	private void consultarPorLikeNome(String string) {
-		Usuario usuario = userRepository.findByLikeNome("Ma");
+		List<Usuario> usuario = userRepository.findByLikeNome("Ma");
 		
-		if (usuario != null) {
-			System.out.println("Nome :" + usuario.getNome());
+		if (usuario != null && usuario.size() > 0) {
+			System.out.println("Nome :" + usuario.get(0).getNome());
 		}else {
 			System.out.println("Nenhum registro encontrado");
 		}
