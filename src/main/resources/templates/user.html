@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="#" th:action="@{/user}" th:object="${user}" method="post">
+
+	<label>Nome</label>
+	<input type="text" th:field="*{nome}">
+	<br>
+	<label>Email</label>
+	<input type="text" th:field="*{email}">
+	<br>
+	<input type="submit" value="Cadastrar">
+</form>
+</body>
+</html>
